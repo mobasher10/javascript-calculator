@@ -84,3 +84,10 @@ resetEl.addEventListener("click", () => {
   num1 = "";
   display1.innerText = "0";
 });
+
+const chechmark = document.querySelectorAll(".chechmark");
+chechmark.forEach((check) => {
+  check.addEventListener("click", () => {
+    check.classList.toggle(".active");
+  });
+});
